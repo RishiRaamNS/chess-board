@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/87eecdb89e.js" crossorigin="anonymous"></script>
+    <title>Chess</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video playsinline autoplay muted loop id="video">
+        <source src="chess.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <h1 class="heading">Keep Calm and Keep Moving</h1>
+        <div class="board-container">
+        <table class="chessboard">
+            <tr class="border">
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+                <td>e</td>
+                <td>f</td>
+                <td>g</td>
+                <td>h</td>
+            </tr>
+            <tr class="row">
+                <td class="column-light"><i class="fa-regular fa-chess-rook" style="color: #483f69;"></i></td>
+                <td class="column-dark"><i class="fa-regular fa-chess-knight" style="color: #483f69;"></i></td>
+                <td class="column-light"><i class="fa-regular fa-chess-bishop" style="color: #483f69;"></i></td>
+                <td class="column-dark"><i class="fa-regular fa-chess-queen" style="color: #483f69;"></i></td>
+                <td class="column-light"><i class="fa-regular fa-chess-king" style="color: #483f69;"></i></td>
+                <td class="column-dark"><i class="fa-regular fa-chess-bishop" style="color: #483f69;"></i></td>
+                <td class="column-light"><i class="fa-regular fa-chess-knight" style="color: #483f69;"></i></td>
+                <td class="column-dark"><i class="fa-regular fa-chess-rook" style="color: #483f69;"></i></td>
+            </tr>
+            <tr class="row">
+                <td class="column-dark"><i class="fa-regular fa-chess-pawn" style="color: #483f69;"></i></td>
+                <td class="column-light"><i class="fa-regular fa-chess-pawn" style="color: #483f69;"></i></td>
+                <td class="column-dark"><i class="fa-regular fa-chess-pawn" style="color: #483f69;"></i></td>
+                <td class="column-light"><i class="fa-regular fa-chess-pawn" style="color: #483f69;"></i></td>
+                <td class="column-dark"><i class="fa-regular fa-chess-pawn" style="color: #483f69;"></i></td>
+                <td class="column-light"><i class="fa-regular fa-chess-pawn" style="color: #483f69;"></i></td>
+                <td class="column-dark"><i class="fa-regular fa-chess-pawn" style="color: #483f69;"></i></td>
+                <td class="column-light"><i class="fa-regular fa-chess-pawn" style="color: #483f69;"></i></td>
+            </tr>
+            <tr class="row">
+                <td class="column-light"></td>
+                <td class="column-dark"></td>
+                <td class="column-light"></td>
+                <td class="column-dark"></td>
+                <td class="column-light"></td>
+                <td class="column-dark"></td>
+                <td class="column-light"></td>
+                <td class="column-dark"></td>
+            </tr>
+            <tr class="row">
+                <td class="column-dark"></td>
+                <td class="column-light"></td>
+                <td class="column-dark"></td>
+                <td class="column-light"></td>
+                <td class="column-dark"></td>
+                <td class="column-light"></td>
+                <td class="column-dark"></td>
+                <td class="column-light"></td>
+            </tr>
+            <tr class="row">
+                <td class="column-light"></td>
+                <td class="column-dark"></td>
+                <td class="column-light"></td>
+                <td class="column-dark"></td>
+                <td class="column-light"></td>
+                <td class="column-dark"></td>
+                <td class="column-light"></td>
+                <td class="column-dark"></td>
+            </tr>
+            <tr class="row">
+                <td class="column-dark"></td>
+                <td class="column-light"></td>
+                <td class="column-dark"></td>
+                <td class="column-light"></td>
+                <td class="column-dark"></td>
+                <td class="column-light"></td>
+                <td class="column-dark"></td>
+                <td class="column-light"></td>
+            </tr>
+            <tr class="row">
+                <td class="column-light"><i class="fa-solid fa-chess-pawn" style="color: #483f69;"></i></td>
+                <td class="column-dark"><i class="fa-solid fa-chess-pawn" style="color: #483f69;"></i></td>
+                <td class="column-light"><i class="fa-solid fa-chess-pawn" style="color: #483f69;"></i></td>
+                <td class="column-dark"><i class="fa-solid fa-chess-pawn" style="color: #483f69;"></i></td>
+                <td class="column-light"><i class="fa-solid fa-chess-pawn" style="color: #483f69;"></i></td>
+                <td class="column-dark"><i class="fa-solid fa-chess-pawn" style="color: #483f69;"></i></td>
+                <td class="column-light"><i class="fa-solid fa-chess-pawn" style="color: #483f69;"></i></td>
+                <td class="column-dark"><i class="fa-solid fa-chess-pawn" style="color: #483f69;"></i></td>
+            </tr>
+            <tr class="row">
+                <td class="column-dark"><i class="fa-solid fa-chess-rook" style="color: #483f69;"></i></td>
+                <td class="column-light"><i class="fa-solid fa-chess-knight" style="color: #483f69;"></i></td>
+                <td class="column-dark"><i class="fa-solid fa-chess-bishop" style="color: #483f69;"></i></td>
+                <td class="column-light"><i class="fa-solid fa-chess-queen" style="color: #483f69;"></i></td>
+                <td class="column-dark"><i class="fa-solid fa-chess-king" style="color: #483f69;"></i></td>
+                <td class="column-light"><i class="fa-solid fa-chess-bishop" style="color: #483f69;"></i></td>
+                <td class="column-dark"><i class="fa-solid fa-chess-knight" style="color: #483f69;"></i></td>
+                <td class="column-light"><i class="fa-solid fa-chess-rook" style="color: #483f69;"></i></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    
+</body>
+</html>
